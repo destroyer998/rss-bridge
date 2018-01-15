@@ -285,8 +285,9 @@ EOD;
 
 						//Build and add final item
 						$item['uri'] = htmlspecialchars_decode($uri);
-						$item['content']['html'] = htmlspecialchars_decode($content);
-						$item['content']['text'] = strip_tags(htmlspecialchars_decode($content));
+						$item['content'] = htmlspecialchars_decode($content);
+						$item['post']['html'] = htmlspecialchars_decode($content);
+						$item['post']['text'] = strip_tags(htmlspecialchars_decode($content));
 						$item['title'] = $title;
 						$item['author'] = $author;
 						$item['timestamp'] = $date;
